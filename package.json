@@ -1,0 +1,27 @@
+{
+  "name": "student-attendance-system",
+  "version": "1.0.0",
+  "description": "Simple Student Attendance System on Aptos Blockchain",
+  "scripts": {
+    "install:all": "npm install && cd backend && npm install && cd ../frontend && npm install",
+    "start:backend": "cd backend && npm run dev",
+    "start:frontend": "cd frontend && npm start",
+    "start:dev": "bash scripts/start-dev.sh",
+    "deploy:contracts": "bash scripts/deploy.sh",
+    "test:contracts": "cd move && aptos move test",
+    "compile:contracts": "cd move && aptos move compile"
+  },
+  "keywords": [
+    "aptos",
+    "blockchain",
+    "move",
+    "attendance",
+    "students",
+    "dapp"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
